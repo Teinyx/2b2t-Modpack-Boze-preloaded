@@ -15,7 +15,7 @@ The modpack was originally a privately made pack for my 2b2t group. Later, with 
 ###![image](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/53b63d9e-a739-484d-9d12-c0e4c9a68546)
 - Step 5 : Click ok
 ### ![image](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/ed5ce351-8bc0-45b2-8e5c-1f436d6397cf)
-
+- Step 6 : Launch the profile
 
 
 
