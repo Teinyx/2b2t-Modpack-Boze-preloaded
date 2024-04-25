@@ -7,9 +7,13 @@ The modpack is created to be used with multiMC! -  [https://multimc.org/](https:
 The modpack was originally a privately made pack for my 2b2t group. Later, with the permission of (Boze Client), we created the **2b2t modpack Boze Preloaded** Version and are now working on releasing other configed versions of the modpack to the public to include support for other clients!
 
 ### How to install?
- - Step 1 : Download MultiMC - [https://multimc.org/](https://multimc.org/)
-- Step 2 : CLick add instance 
-### ![Replace this with a description](https://cdn.modrinth.com/data/cached_images/cc413928a9c61242a7399641b79fd532271921ba.png)
+- Step 1 : Download MultiMC - [https://multimc.org/](https://multimc.org/)
+- Step 2 : Download the zip file or mrPack Files
+- Step 3 : CLick add instance 
+### ![Instance](https://cdn.modrinth.com/data/cached_images/cc413928a9c61242a7399641b79fd532271921ba.png)
+- Step 4 : Click import zipfile **[This works with both zips and MrPack Files from modrinth]**
+![image](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/53b63d9e-a739-484d-9d12-c0e4c9a68546)
+
 - 
 
 
