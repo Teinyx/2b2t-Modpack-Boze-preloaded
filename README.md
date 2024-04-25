@@ -1,4 +1,5 @@
-![logo](https://cdn.modrinth.com/data/cached_images/472a8b0a9712369d323fc933fce031af358af4e3.png)
+![test5](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/f2b73bd9-8dc6-48d7-b8ba-d705ad735f44)
+
 # 2b2t Modpack
 Welcome to the first ever curated 2b2t modpack created by 2b2t players for 2b2t players! 
 The modpack is created to be used with multiMC! -  [https://multimc.org/](https://multimc.org/) 
