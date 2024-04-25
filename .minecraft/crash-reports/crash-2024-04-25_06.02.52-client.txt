@@ -1,0 +1,450 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 2024-04-25 06:02:52
+Description: Rendering entity in world
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_640.method_2966()" because the return value of "net.minecraft.class_742.method_3123()" is null
+	at net.minecraft.class_742.handler$zzb000$onGetCapeTexture(class_742.java)
+	at net.minecraft.class_742.method_3119(class_742.java)
+	at dev.tr7zw.waveycapes.NMSUtil.getPlayerCape(NMSUtil.java:36)
+	at dev.tr7zw.waveycapes.renderlayers.CustomCapeRenderLayer.getCapeRenderer(CustomCapeRenderLayer.java:470)
+	at dev.tr7zw.waveycapes.renderlayers.CustomCapeRenderLayer.render(CustomCapeRenderLayer.java:59)
+	at dev.tr7zw.waveycapes.renderlayers.CustomCapeRenderLayer.method_4199(CustomCapeRenderLayer.java:45)
+	at net.minecraft.class_922.method_4054(class_922.java:145)
+	at net.minecraft.class_1007.method_4215(class_1007.java:66)
+	at net.minecraft.class_1007.method_3936(class_1007.java:43)
+	at net.minecraft.class_898.method_3954(class_898.java:145)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:82)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:54)
+	at com.mineblock11.skinshuffle.client.gui.widgets.OpenCarouselButton.method_25394(OpenCarouselButton.java:82)
+	at net.minecraft.class_437.method_25394(class_437.java:120)
+	at net.minecraft.class_433.method_25394(class_433.java:137)
+	at net.minecraft.class_437.method_47413(class_437.java:110)
+	at net.minecraft.class_757.mixinextras$bridge$method_47413$281(class_757.java)
+	at net.minecraft.class_757.wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu(class_757.java:4107)
+	at net.minecraft.class_757.mixinextras$bridge$wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu$282(class_757.java)
+	at net.minecraft.class_757.wrapOperation$cap000$konkrete$wrapRenderScreenKonkrete(class_757.java:6628)
+	at net.minecraft.class_757.method_3192(class_757.java:945)
+	at net.minecraft.class_310.method_1523(class_310.java:1219)
+	at net.minecraft.class_310.method_1514(class_310.java:802)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.class_742.handler$zzb000$onGetCapeTexture(class_742.java)
+	at net.minecraft.class_742.method_3119(class_742.java)
+	at dev.tr7zw.waveycapes.NMSUtil.getPlayerCape(NMSUtil.java:36)
+	at dev.tr7zw.waveycapes.renderlayers.CustomCapeRenderLayer.getCapeRenderer(CustomCapeRenderLayer.java:470)
+	at dev.tr7zw.waveycapes.renderlayers.CustomCapeRenderLayer.render(CustomCapeRenderLayer.java:59)
+	at dev.tr7zw.waveycapes.renderlayers.CustomCapeRenderLayer.method_4199(CustomCapeRenderLayer.java:45)
+	at net.minecraft.class_922.method_4054(class_922.java:145)
+	at net.minecraft.class_1007.method_4215(class_1007.java:66)
+	at net.minecraft.class_1007.method_3936(class_1007.java:43)
+	at net.minecraft.class_898.method_3954(class_898.java:145)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:82)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:54)
+	at com.mineblock11.skinshuffle.client.gui.widgets.OpenCarouselButton.method_25394(OpenCarouselButton.java:82)
+	at net.minecraft.class_437.method_25394(class_437.java:120)
+	at net.minecraft.class_433.method_25394(class_433.java:137)
+	at net.minecraft.class_437.method_47413(class_437.java:110)
+	at net.minecraft.class_757.mixinextras$bridge$method_47413$281(class_757.java)
+	at net.minecraft.class_757.wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu(class_757.java:4107)
+	at net.minecraft.class_757.mixinextras$bridge$wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu$282(class_757.java)
+	at net.minecraft.class_757.wrapOperation$cap000$konkrete$wrapRenderScreenKonkrete(class_757.java:6628)
+
+-- Entity being rendered --
+Details:
+	Entity Type: minecraft:player (com.mineblock11.skinshuffle.client.gui.cursed.DummyClientPlayerEntity)
+	Entity ID: 71
+	Entity Name: Teinyx
+	Entity's Exact location: 8.50, 65.00, 8.50
+	Entity's Block location: World: (8,65,8), Section: (at 8,1,8 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.class_898.method_3954(class_898.java:145)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:82)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:54)
+	at com.mineblock11.skinshuffle.client.gui.widgets.OpenCarouselButton.method_25394(OpenCarouselButton.java:82)
+	at net.minecraft.class_437.method_25394(class_437.java:120)
+	at net.minecraft.class_433.method_25394(class_433.java:137)
+	at net.minecraft.class_437.method_47413(class_437.java:110)
+	at net.minecraft.class_757.mixinextras$bridge$method_47413$281(class_757.java)
+	at net.minecraft.class_757.wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu(class_757.java:4107)
+	at net.minecraft.class_757.mixinextras$bridge$wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu$282(class_757.java)
+	at net.minecraft.class_757.wrapOperation$cap000$konkrete$wrapRenderScreenKonkrete(class_757.java:6628)
+	at net.minecraft.class_757.method_3192(class_757.java:945)
+	at net.minecraft.class_310.method_1523(class_310.java:1219)
+	at net.minecraft.class_310.method_1514(class_310.java:802)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+-- Renderer details --
+Details:
+	Assigned renderer: net.minecraft.class_1007@57e8fe85
+	Location: 0.00,0.00,0.00 - World: (0,0,0), Section: (at 0,0,0 in 0,0,0; chunk contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Rotation: 0.0
+	Delta: 1.0
+Stacktrace:
+	at net.minecraft.class_898.method_3954(class_898.java:145)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:82)
+	at com.mineblock11.skinshuffle.client.gui.cursed.GuiEntityRenderer.drawEntity(GuiEntityRenderer.java:54)
+	at com.mineblock11.skinshuffle.client.gui.widgets.OpenCarouselButton.method_25394(OpenCarouselButton.java:82)
+	at net.minecraft.class_437.method_25394(class_437.java:120)
+	at net.minecraft.class_433.method_25394(class_433.java:137)
+	at net.minecraft.class_437.method_47413(class_437.java:110)
+	at net.minecraft.class_757.mixinextras$bridge$method_47413$281(class_757.java)
+	at net.minecraft.class_757.wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu(class_757.java:4107)
+	at net.minecraft.class_757.mixinextras$bridge$wrapOperation$bib000$fancymenu$wrapRenderScreenFancyMenu$282(class_757.java)
+	at net.minecraft.class_757.wrapOperation$cap000$konkrete$wrapRenderScreenKonkrete(class_757.java:6628)
+	at net.minecraft.class_757.method_3192(class_757.java:945)
+	at net.minecraft.class_310.method_1523(class_310.java:1219)
+	at net.minecraft.class_310.method_1514(class_310.java:802)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.class_433
+	Mouse location: Scaled: (640, 252). Absolute: (1280.000000, 504.000000)
+	Screen size: Scaled: (1280, 505). Absolute: (2560, 1009). Scale factor of 2.000000
+Stacktrace:
+	at net.minecraft.class_757.method_3192(class_757.java:945)
+	at net.minecraft.class_310.method_1523(class_310.java:1219)
+	at net.minecraft.class_310.method_1514(class_310.java:802)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+-- Affected level --
+Details:
+	All players: 6 total; [class_746['Teinyx'/26417, l='ClientLevel', x=69.40, y=152.00, z=164.58], class_745['ZedaBot'/24754, l='ClientLevel', x=69.40, y=152.00, z=164.58], class_745['willmasterr'/26342, l='ClientLevel', x=64.43, y=4.00, z=160.70], class_745['MISSIONTABLE280'/25823, l='ClientLevel', x=60.30, y=3.00, z=171.30], class_745['AlmasWarlord'/26141, l='ClientLevel', x=58.55, y=4.00, z=163.83], class_745['Nexinor'/26415, l='ClientLevel', x=69.40, y=152.00, z=164.58]]
+	Chunk stats: 65536, 81
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (69,152,164), Section: (at 5,8,4 in 4,9,10; chunk contains blocks 64,0,160 to 79,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 99773 game time, 1304236565 day time
+	Server brand: Paper (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.class_638.method_8538(class_638.java:458)
+	at net.minecraft.class_310.method_1587(class_310.java:2406)
+	at net.minecraft.class_310.method_1514(class_310.java:821)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Unknown Source)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, fabric, replaymod_lang
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.10, Azul Systems, Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Azul Systems, Inc.
+	Memory: 665379328 bytes (634 MiB) / 2038431744 bytes (1944 MiB) up to 5242880000 bytes (5000 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: 13th Gen Intel(R) Core(TM) i7-13620H
+	Identifier: Intel64 Family 6 Model 186 Stepping 2
+	Microarchitecture: unknown
+	Frequency (GHz): 2.92
+	Number of physical packages: 1
+	Number of physical CPUs: 10
+	Number of logical CPUs: 16
+	Graphics card #0 name: Virtual Desktop Monitor
+	Graphics card #0 vendor: Virtual Desktop, Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=10.54.50.446
+	Graphics card #1 name: Intel(R) UHD Graphics
+	Graphics card #1 vendor: Intel Corporation (0x8086)
+	Graphics card #1 VRAM (MB): 1024.00
+	Graphics card #1 deviceId: 0xa7a8
+	Graphics card #1 versionInfo: DriverVersion=31.0.101.4314
+	Graphics card #2 name: SMI USB Display
+	Graphics card #2 vendor: SiliconMotion (0x090c)
+	Graphics card #2 VRAM (MB): 0.00
+	Graphics card #2 deviceId: 0x0768
+	Graphics card #2 versionInfo: DriverVersion=2.19.2.0
+	Graphics card #3 name: NVIDIA GeForce RTX 4050 Laptop GPU
+	Graphics card #3 vendor: NVIDIA (0x10de)
+	Graphics card #3 VRAM (MB): 4095.00
+	Graphics card #3 deviceId: 0x28a1
+	Graphics card #3 versionInfo: DriverVersion=31.0.15.5212
+	Memory slot #0 capacity (MB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 32768.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 69335.51
+	Virtual memory used (MB): 57795.23
+	Swap memory total (MB): 4096.00
+	Swap memory used (MB): 180.26
+	JVM Flags: 4 total; -XX:+DisableAttachMechanism -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx5000m
+	Fabric Mods: 
+		appleskin: AppleSkin 2.5.1+mc1.20
+			cloth-config: Cloth Config v11 11.1.118
+				cloth-basic-math: cloth-basic-math 0.6.1
+		balm-fabric: Balm 7.2.2
+		baritone: Baritone 1.10.1
+		betteradvancements: Better Advancements 0.3.2.162
+		betterhiddenchat: Better hidden chat 1.1.0
+		betterstats: Better Statistics Screen 3.9.7+fabric-1.20.1
+			tcdcommons: TCD Commons API 3.9.6+fabric-1.20.1
+		betterthirdperson: Better Third Person 1.9.0
+		bookcopy: Book Copy 0.1.1-1.20.1
+		boze-api: Boze API 1.2.0
+		capes: Capes 1.5.2+1.20
+		chatnotify: ChatNotify 1.2.0
+		cicada: CICADA 0.6.2+1.20.1-and-below
+		cleardespawn: Clear Despawn 1.1.15
+		cloth-config: Cloth Config v11 11.1.118
+			cloth-basic-math: cloth-basic-math 0.6.1
+		cmdkeybind: Command Macros 1.6.3-1.20
+			kyrptconfig: Kyrpt Config 1.5.6-1.20
+		controlling: Controlling For Fabric 12.0.2
+		csearcher: ContainerSearcher 0.1.8+mc1.20
+		fabric-api: Fabric API 0.92.1+1.20.1
+			fabric-api-base: Fabric API Base 0.4.31+1802ada577
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.36+1802ada577
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.13+1802ada577
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.11+1802ada577
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.1+1802ada577
+			fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.41+1802ada577
+			fabric-client-tags-api-v1: Fabric Client Tags 1.1.2+1802ada577
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.34+f71b366f77
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.13+1802ada577
+			fabric-commands-v0: Fabric Commands (v0) 0.2.51+df3654b377
+			fabric-containers-v0: Fabric Containers (v0) 0.1.64+df3654b377
+			fabric-content-registries-v0: Fabric Content Registries (v0) 4.0.11+1802ada577
+			fabric-convention-tags-v1: Fabric Convention Tags 1.5.5+1802ada577
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.19+1802ada577
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.0.0+de0fd6d177
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 12.3.4+1802ada577
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.54+1802ada577
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.0+1c78457f77
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.2+1802ada577
+			fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.63+df3654b377
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.40+1802ada577
+			fabric-item-api-v1: Fabric Item API (v1) 2.1.28+1802ada577
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.12+1802ada577
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.37+1802ada577
+			fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.35+df3654b377
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.22+1802ada577
+			fabric-loot-api-v2: Fabric Loot API (v2) 1.2.1+1802ada577
+			fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.45+9e7660c677
+			fabric-message-api-v1: Fabric Message API (v1) 5.1.9+1802ada577
+			fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.50+1802ada577
+			fabric-model-loading-api-v1: Fabric Model Loading API (v1) 1.0.3+1802ada577
+			fabric-models-v0: Fabric Models (v0) 0.4.2+9386d8a777
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.3.11+1802ada577
+			fabric-networking-v0: Fabric Networking (v0) 0.3.51+df3654b377
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 11.1.3+1802ada577
+			fabric-particles-v1: Fabric Particles (v1) 1.1.2+1802ada577
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.21+1802ada577
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 2.3.3+1802ada577
+			fabric-renderer-api-v1: Fabric Renderer API (v1) 3.2.1+1802ada577
+			fabric-renderer-indigo: Fabric Renderer - Indigo 1.5.1+1802ada577
+			fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.46+df3654b377
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.37+92a0d36777
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.28+1802ada577
+			fabric-rendering-v0: Fabric Rendering (v0) 1.1.49+df3654b377
+			fabric-rendering-v1: Fabric Rendering (v1) 3.0.8+1802ada577
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.8+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.10+1802ada577
+			fabric-screen-api-v1: Fabric Screen API (v1) 2.0.8+1802ada577
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.30+1802ada577
+			fabric-sound-api-v1: Fabric Sound API (v1) 1.0.13+1802ada577
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 3.3.5+8dd72ea377
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 4.3.1+1802ada577
+		fabric-language-kotlin: Fabric Language Kotlin 1.10.19+kotlin.1.9.23
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 1.9.23
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 1.9.23
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 1.9.23
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 1.9.23
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.23.2
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.8.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.8.0
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.5.0
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.6.3
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.6.3
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.6.3
+		fabricloader: Fabric Loader 0.15.7+local
+		fancymenu: FancyMenu 3.1.4
+			com_github_keksuccino_japng: japng 0.5.3
+			com_github_rtyley_animated-gif-lib-for-java: animated-gif-lib-for-java animated-gif-lib-1.7
+			mixinextras: MixinExtras 0.3.2
+		forgeconfigapiport: Forge Config API Port 8.0.0
+		iris: Iris 1.7.0+mc1.20.1
+			io_github_douira_glsl-transformer: glsl-transformer 2.0.0-pre13
+			org_anarres_jcpp: jcpp 1.4.14
+			org_antlr_antlr4-runtime: antlr4-runtime 4.11.1
+		java: OpenJDK 64-Bit Server VM 17
+		jei: Just Enough Items 15.3.0.4
+		journeymap: Journeymap 5.9.21
+			journeymap-api-fabric: JourneyMap API 1.20-1.9-fabric-SNAPSHOT
+		konkrete: Konkrete 1.8.1
+		litematica: Litematica 0.15.3
+		malilib: MaLiLib 0.16.3
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.10+1802ada577
+		mapfrontiers: MapFrontiers 2.6.0
+			commonnetworking: Common Network 1.0.2-1.20.1
+		melody: Melody 1.0.3
+		minecraft: Minecraft 1.20.1
+		mixin-conflict-helper: Mixin Conflict Helper 1.2.0
+		modernui: Modern UI 3.10.1.4
+			com_github_ben-manes_caffeine_caffeine: caffeine 3.1.7
+			com_vladsch_flexmark_flexmark: flexmark 0.64.8
+			com_vladsch_flexmark_flexmark-util-ast: flexmark-util-ast 0.64.8
+			com_vladsch_flexmark_flexmark-util-builder: flexmark-util-builder 0.64.8
+			com_vladsch_flexmark_flexmark-util-collection: flexmark-util-collection 0.64.8
+			com_vladsch_flexmark_flexmark-util-data: flexmark-util-data 0.64.8
+			com_vladsch_flexmark_flexmark-util-dependency: flexmark-util-dependency 0.64.8
+			com_vladsch_flexmark_flexmark-util-format: flexmark-util-format 0.64.8
+			com_vladsch_flexmark_flexmark-util-html: flexmark-util-html 0.64.8
+			com_vladsch_flexmark_flexmark-util-misc: flexmark-util-misc 0.64.8
+			com_vladsch_flexmark_flexmark-util-sequence: flexmark-util-sequence 0.64.8
+			com_vladsch_flexmark_flexmark-util-visitor: flexmark-util-visitor 0.64.8
+		modmenu: Mod Menu 7.2.2
+			fabric-api-base: Fabric API Base 0.4.31+1802ada577
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.37+1802ada577
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.22+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.10+1802ada577
+			fabric-screen-api-v1: Fabric Screen API (v1) 2.0.8+1802ada577
+		netherportalfix: NetherPortalFix 13.0.1
+		player-search: Player Search 1.0.0+1.20
+			clientarguments: clientarguments 1.5.1
+			com_googlecode_json-simple_json-simple: json-simple 1.1.1
+			com_konghq_unirest-java_standalone: unirest-java 3.11.9
+		puzzleslib: Puzzles Lib 8.1.18
+			puzzlesaccessapi: Puzzles Access Api 8.0.7
+		reeses-sodium-options: Reese's Sodium Options 1.7.2+mc1.20.1-build.101
+		replaymod: Replay Mod 1.20.1-2.6.15
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.37+1802ada577
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.3.11+1802ada577
+		searchables: Searchables 1.0.2
+		showmeyourskin: Show Me Your Skin! 1.9.0+1.20
+			cardinal-components-base: Cardinal Components API (base) 5.2.1
+			cardinal-components-entity: Cardinal Components API (entities) 5.2.1
+		skinshuffle: SkinShuffle 1.0.1+1.20
+			com_konghq_unirest-java_standalone: unirest-java 3.11.9
+			commons-validator_commons-validator: commons-validator 1.7
+			org_jsoup_jsoup: jsoup 1.16.1
+			org_mineskin_java-client: java-client 1.2.4-SNAPSHOT
+			spruceui: SpruceUI 5.0.0+1.20
+			yet_another_config_lib_v3: YetAnotherConfigLib 3.4.0+1.20.1-fabric
+				com_twelvemonkeys_common_common-image: common-image 3.10.0
+				com_twelvemonkeys_common_common-io: common-io 3.10.0
+				com_twelvemonkeys_common_common-lang: common-lang 3.10.0
+				com_twelvemonkeys_imageio_imageio-core: imageio-core 3.10.0
+				com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.10.0
+				com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.10.0
+				org_quiltmc_parsers_gson: gson 0.2.1
+				org_quiltmc_parsers_json: json 0.2.1
+		sodium: Sodium 0.5.8+mc1.20.1
+			fabric-api-base: Fabric API Base 0.4.31+1802ada577
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.1+1802ada577
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.37+92a0d36777
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.28+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.10+1802ada577
+		sodium-extra: Sodium Extra 0.5.4+mc1.20.1-build.115
+			caffeineconfig: CaffeineConfig 1.3.0+1.17
+			crowdin-translate: CrowdinTranslate 1.4+1.19.3
+		textutilities: Text Utilities 1.6.1+1.20.1
+		uiutils: UI Utils 1.3.2
+		viafabricplus: ViaFabricPlus 2.8.7
+			mixinextras: MixinExtras 0.3.2
+			net_lenni0451_reflect: Reflect 1.2.4
+		waveycapes: WaveyCapes 1.4.5
+		worldtools: WorldTools 1.2.4
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.4.0+1.20.1-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.10.0
+			com_twelvemonkeys_common_common-io: common-io 3.10.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.10.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.10.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.10.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.10.0
+			org_quiltmc_parsers_gson: gson 0.2.1
+			org_quiltmc_parsers_json: json 0.2.1
+		zoomify: Zoomify 2.11.2
+			com_akuleshov7_ktoml-core-jvm: ktoml-core-jvm 0.4.1
+			dev_isxander_settxi_settxi-core: settxi-core 2.10.6
+			dev_isxander_settxi_settxi-kotlinx-serialization: settxi-kotlinx-serialization 2.10.6
+			mixinextras: MixinExtras 0.3.2
+	Loaded Shaderpack: (off)
+	Launched Version: 1.20.1
+	Backend library: LWJGL version 3.3.1 SNAPSHOT
+	Backend API: NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 552.12, NVIDIA Corporation
+	Window size: 2560x1009
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: vanilla, fabric
+	Current Language: en_us
+	CPU: 16x 13th Gen Intel(R) Core(TM) i7-13620H

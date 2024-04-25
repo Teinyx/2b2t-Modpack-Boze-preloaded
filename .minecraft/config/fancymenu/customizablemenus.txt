@@ -9,3 +9,6 @@ net.minecraft.class_433 {
 net.minecraft.class_424 {
 }
 
+me.cael.capes.menu.SelectorMenu {
+}
+

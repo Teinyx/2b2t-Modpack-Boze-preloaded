@@ -1912,9 +1912,9 @@
     }
   },
   "Capes": {
-    "DescriptionSeen": false,
+    "DescriptionSeen": true,
     "Anonymous": {
-      "DescriptionSeen": false
+      "DescriptionSeen": true
     }
   },
   "Chams": {
@@ -4096,12 +4096,12 @@
     }
   },
   "NoFall": {
-    "DescriptionSeen": false,
+    "DescriptionSeen": true,
     "Mode": {
-      "DescriptionSeen": false
+      "DescriptionSeen": true
     },
     "Distance": {
-      "DescriptionSeen": false
+      "DescriptionSeen": true
     },
     "Proximity": {
       "DescriptionSeen": false

@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = bozeconfig
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1713993445845
+  last_edited_time = 1714048908489
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:9903a71a-28e5-42c1-996d-e32de3f9df69-1713993412600] = [groups:][instances:]
+  [loading_requirement_container_meta:bf00e98d-e040-4a01-9d41-6d0da08cd9ee-1714048789181] = [groups:][instances:]
 }
 
 customization {
@@ -45,7 +45,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -105
-  y = -146
+  y = -149
   width = 100
   height = 20
   stretch_x = false
@@ -74,7 +74,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -105
-  y = -72
+  y = -74
   width = 100
   height = 20
   stretch_x = false
@@ -103,7 +103,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -105
-  y = -97
+  y = -98
   width = 100
   height = 20
   stretch_x = false
@@ -132,7 +132,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = 5
-  y = -97
+  y = -99
   width = 100
   height = 20
   stretch_x = false
@@ -161,7 +161,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = 5
-  y = -122
+  y = -124
   width = 100
   height = 20
   stretch_x = false
@@ -190,7 +190,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -105
-  y = -122
+  y = -124
   width = 100
   height = 20
   stretch_x = false
@@ -219,7 +219,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = 5
-  y = -146
+  y = -149
   width = 100
   height = 20
   stretch_x = false
@@ -248,7 +248,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -105
-  y = -48
+  y = -49
   width = 100
   height = 20
   stretch_x = false
@@ -277,7 +277,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = 5
-  y = -72
+  y = -74
   width = 100
   height = 20
   stretch_x = false
@@ -306,7 +306,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = 5
-  y = -48
+  y = -49
   width = 100
   height = 20
   stretch_x = false
@@ -335,7 +335,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -105
-  y = -25
+  y = -24
   width = 210
   height = 20
   stretch_x = false

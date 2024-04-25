@@ -118,7 +118,7 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-key_betterhiddenchat.toggle:key.keyboard.unknown
+key_betterhiddenchat.toggle:key.keyboard.apostrophe
 key_key.csearcher.search_menu:key.keyboard.keypad.5
 key_key.csearcher.search_in_near_container:key.keyboard.y
 key_key.journeymap.zoom_in:key.keyboard.equal

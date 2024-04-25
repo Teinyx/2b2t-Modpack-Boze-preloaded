@@ -17,8 +17,8 @@
     ]
   },
   "recording": {
-    "recordSingleplayer": true,
-    "recordServer": true,
+    "recordSingleplayer": false,
+    "recordServer": false,
     "indicator": true,
     "autoStartRecording": false,
     "autoPostProcess": true,
@@ -56,7 +56,7 @@
     "pathpreview": true,
     "autosync": true,
     "timelineLength": 1800,
-    "interpolator": "replaymod.gui.editkeyframe.interpolator.catmullrom.name",
+    "interpolator": "replaymod.gui.editkeyframe.interpolator.cubic.name",
     "interpolator_valid_values": [
       "replaymod.gui.editkeyframe.interpolator.catmullrom.name",
       "replaymod.gui.editkeyframe.interpolator.cubic.name",
