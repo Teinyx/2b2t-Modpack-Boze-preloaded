@@ -86,4 +86,3 @@ Our modpack offers an array of highly useful features tailored specifically for 
 - https://modrinth.com/user/strikerrocker
 - https://github.com/leijurv
 - https://www.curseforge.com/members/masady/projects
-- https://www.curseforge.com/members/masady/projects
