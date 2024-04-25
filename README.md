@@ -14,7 +14,8 @@ The modpack was originally a privately made pack for my 2b2t group. Later, with 
 - Step 4 : Click import zipfile **[This works with both zips and MrPack Files from modrinth]**
 ###![image](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/53b63d9e-a739-484d-9d12-c0e4c9a68546)
 - Step 5 : Click ok
-### ![image](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/44232d22-f904-4723-9029-1f3bc7702ef8)
+### ![image](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded/assets/168003075/db3c0b1f-f30c-485a-830e-0f7fc1f4e20f)
+
 
 
 
