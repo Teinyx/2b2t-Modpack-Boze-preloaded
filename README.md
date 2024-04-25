@@ -37,7 +37,7 @@ Our modpack offers an array of highly useful features tailored specifically for 
 
 
 ### Modpack Version
-- Boze preloader | [https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded?tab=readme-ov-file](https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded)
+- Boze preloader | https://github.com/Teinyx/2b2t-Modpack-Boze-preloaded
 - Plain Modpack  | [https://modrinth.com/modpack/2b2t_modpack/version/o7hlCaW9](https://modrinth.com/modpack/2b2t_modpack/version/o7hlCaW9)
 ### Coming soon
 
