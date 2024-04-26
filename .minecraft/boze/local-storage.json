@@ -1912,9 +1912,9 @@
     }
   },
   "Capes": {
-    "DescriptionSeen": true,
+    "DescriptionSeen": false,
     "Anonymous": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     }
   },
   "Chams": {
@@ -3280,12 +3280,12 @@
     }
   },
   "Gui": {
-    "DescriptionSeen": true,
+    "DescriptionSeen": false,
     "Layout": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Blur": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Blur.Passes": {
       "DescriptionSeen": false
@@ -3294,7 +3294,7 @@
       "DescriptionSeen": false
     },
     "Descriptions": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Descriptions.Delay": {
       "DescriptionSeen": false
@@ -3303,22 +3303,22 @@
       "DescriptionSeen": false
     },
     "SaveScroll": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "SearchBar": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "SearchBar.AnyKeySearch": {
       "DescriptionSeen": false
     },
     "Advanced": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "AA": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Categories": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Categories.SingleModule": {
       "DescriptionSeen": false
@@ -3339,14 +3339,14 @@
       "DescriptionSeen": false
     },
     "Toggles": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "ModeBox": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     }
   },
   "HUD": {
-    "DescriptionSeen": true,
+    "DescriptionSeen": false,
     "Render": {
       "DescriptionSeen": false
     },
@@ -4096,12 +4096,12 @@
     }
   },
   "NoFall": {
-    "DescriptionSeen": true,
+    "DescriptionSeen": false,
     "Mode": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Distance": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Proximity": {
       "DescriptionSeen": false
@@ -5806,132 +5806,132 @@
     }
   },
   "Theme": {
-    "DescriptionSeen": true,
+    "DescriptionSeen": false,
     "Accent": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "AccentText": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "AccentSubText": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Primary": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Secondary": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Background": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Text": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "SubText": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "TextShadow": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Header": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Header.Height": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Header.Align": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Header.Style": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Header.CustomColor": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Header.Color": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "ModuleList": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "ModuleList.Width": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "ModuleList.Indentation": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "ModuleList.Separation": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.Height": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.Align": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.Style": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.LightAccent": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.Option": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.PowerButton": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.TuneButton": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.ConfigsButton": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.ExpandButton": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.HoverOnly": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.ShowBinds": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.CustomColors": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.OffColor": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Module.OnColor": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Setting": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Setting.Height": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Setting.SideBar": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Footer": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Footer.Height": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Footer.CustomColor": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Footer.Color": {
       "DescriptionSeen": false
     },
     "Outline": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "Outline.CustomColor": {
       "DescriptionSeen": false
@@ -5949,13 +5949,13 @@
       "DescriptionSeen": false
     },
     "RoundCorners": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "BrightHighlight": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     },
     "DarkenHighlight": {
-      "DescriptionSeen": true
+      "DescriptionSeen": false
     }
   },
   "ThrowPot": {
