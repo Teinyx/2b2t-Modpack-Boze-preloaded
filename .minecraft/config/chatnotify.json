@@ -41,13 +41,13 @@
       },
       "triggers": [
         {
-          "string": "Teinyx",
+          "string": "Profile name",
           "enabled": true,
           "isKey": false,
           "isRegex": false
         },
         {
-          "string": "Teinyx",
+          "string": "Display name",
           "enabled": true,
           "isKey": false,
           "isRegex": false

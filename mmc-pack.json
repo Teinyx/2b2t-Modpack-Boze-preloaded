@@ -49,13 +49,8 @@
             "version": "0.15.10"
         },
         {
-            "cachedName": "Boze Loader",
-            "cachedRequires": [
-                {
-                    "uid": "net.fabricmc.intermediary"
-                }
-            ],
-            "cachedVersion": "0.0.9",
+            "cachedName": "boze",
+            "cachedVersion": "1",
             "uid": "dev.boze"
         }
     ],
