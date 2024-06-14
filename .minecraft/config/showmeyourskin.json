@@ -1,11 +1,20 @@
 {
   "globalEnabled": true,
-  "overridesEnabledInServerMode": false,
+  "overridesEnabledInServerMode": true,
   "combatCooldown": 16.0,
   "fadeOutTime": 2.0,
   "global": {
     "pieces": {
+      "HEAD": {
+        "transparency": 0
+      },
+      "ELYTRA": {
+        "transparency": 100
+      },
       "HAT": {
+        "transparency": 100
+      },
+      "LEGS": {
         "transparency": 100
       },
       "FEET": {
@@ -14,41 +23,41 @@
       "CHEST": {
         "transparency": 100
       },
-      "HEAD": {
-        "transparency": 0
-      },
-      "LEGS": {
-        "transparency": 100
-      },
       "SHIELD": {
-        "transparency": 100
-      },
-      "ELYTRA": {
         "transparency": 100
       }
     },
     "trims": {
-      "MAINHAND": {
-        "transparency": 100
+      "HEAD": {
+        "transparency": 0
       },
-      "FEET": {
-        "transparency": 100
-      },
-      "LEGS": {
+      "CHEST": {
         "transparency": 100
       },
       "OFFHAND": {
         "transparency": 100
       },
-      "CHEST": {
+      "LEGS": {
         "transparency": 100
       },
-      "HEAD": {
-        "transparency": 0
+      "FEET": {
+        "transparency": 100
+      },
+      "MAINHAND": {
+        "transparency": 100
       }
     },
     "glints": {
+      "HEAD": {
+        "transparency": 100
+      },
+      "ELYTRA": {
+        "transparency": 100
+      },
       "HAT": {
+        "transparency": 100
+      },
+      "LEGS": {
         "transparency": 100
       },
       "FEET": {
@@ -57,16 +66,7 @@
       "CHEST": {
         "transparency": 100
       },
-      "HEAD": {
-        "transparency": 100
-      },
-      "LEGS": {
-        "transparency": 100
-      },
       "SHIELD": {
-        "transparency": 100
-      },
-      "ELYTRA": {
         "transparency": 100
       }
     },
@@ -76,7 +76,16 @@
   "overrides": {
     "cb8e284d-40e7-47ec-8fb5-9b998fa98b5f": {
       "pieces": {
+        "HEAD": {
+          "transparency": 0
+        },
+        "ELYTRA": {
+          "transparency": 100
+        },
         "HAT": {
+          "transparency": 100
+        },
+        "LEGS": {
           "transparency": 100
         },
         "FEET": {
@@ -85,35 +94,41 @@
         "CHEST": {
           "transparency": 100
         },
-        "HEAD": {
-          "transparency": 0
-        },
-        "LEGS": {
-          "transparency": 100
-        },
         "SHIELD": {
-          "transparency": 100
-        },
-        "ELYTRA": {
           "transparency": 100
         }
       },
       "trims": {
-        "FEET": {
+        "HEAD": {
+          "transparency": 0
+        },
+        "CHEST": {
+          "transparency": 100
+        },
+        "OFFHAND": {
           "transparency": 100
         },
         "LEGS": {
           "transparency": 100
         },
-        "CHEST": {
+        "FEET": {
           "transparency": 100
         },
-        "HEAD": {
-          "transparency": 0
+        "MAINHAND": {
+          "transparency": 100
         }
       },
       "glints": {
+        "HEAD": {
+          "transparency": 100
+        },
+        "ELYTRA": {
+          "transparency": 100
+        },
         "HAT": {
+          "transparency": 100
+        },
+        "LEGS": {
           "transparency": 100
         },
         "FEET": {
@@ -122,16 +137,7 @@
         "CHEST": {
           "transparency": 100
         },
-        "HEAD": {
-          "transparency": 100
-        },
-        "LEGS": {
-          "transparency": 100
-        },
         "SHIELD": {
-          "transparency": 100
-        },
-        "ELYTRA": {
           "transparency": 100
         }
       },
